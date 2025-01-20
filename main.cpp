@@ -4,12 +4,12 @@
 
 int main(int argc, char *argv[])
 {
-	const std::string encoder_filename = "../models/big/vit_h_encoder_not_quantized/vit_h_encoder";
-	const std::string decoder_filename = "../models/big/vit_h_decoder";
+	const std::string encoder_filename = "../../models/vit_h_encoder_files/vit_h_encoder";
+	const std::string decoder_filename = "../../models/vit_h_decoder";
     
     SamDecoder sam(encoder_filename, decoder_filename);
 
-    cv::Mat frame = cv::imread("../22.jpeg");
+    cv::Mat frame = cv::imread("../../dog.jpg");
     cv::resize(frame, frame, cv::Size(1024, 1024));
    
 

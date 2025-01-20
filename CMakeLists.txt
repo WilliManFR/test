@@ -10,8 +10,8 @@ set(CUDA_NVCC_PLAGS ${CUDA_NVCC_PLAGS};-std=c++11;-g;-G;-gencode;arch=compute_53
 
 find_package(OpenCV REQUIRED)
 
-link_directories(C:/Users/william.guillet/Libraries/TensorRT-10.7.0.23/lib)
-include_directories(C:/Users/william.guillet/Libraries/TensorRT-10.7.0.23/include)
+link_directories(MY_PATH/TensorRT-10.7.0.23/lib)
+include_directories(MY_PATH/TensorRT-10.7.0.23/include)
 
 include_directories(
     ${OpenCV_INCLUDE_DIRS}/include

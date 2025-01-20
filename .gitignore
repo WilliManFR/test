@@ -1,4 +1,6 @@
 .vscode
 build
 *.engine
-models
+models/pth
+models/vit_h_encoder_files
+models/**.engine
